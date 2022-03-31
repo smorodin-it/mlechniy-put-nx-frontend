@@ -1,15 +1,14 @@
-import styled from 'styled-components';
-import NxWelcome from './nx-welcome';
-
-const StyledApp = styled.div`
-  // Your style here
-`;
+import { theme } from './themes/theme';
+import { ThemeProvider } from '@mui/material';
+import CssBaseline from '@mui/material/CssBaseline';
+import AppRouter from './navigation/Router';
 
 export function App() {
   return (
-    <StyledApp>
-      <NxWelcome title="participant" />
-    </StyledApp>
+    <ThemeProvider theme={theme}>
+      <CssBaseline />
+      <AppRouter />
+    </ThemeProvider>
   );
 }
 
