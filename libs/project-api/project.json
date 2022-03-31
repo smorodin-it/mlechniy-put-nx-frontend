@@ -1,23 +1,23 @@
 {
-  "root": "libs/project-api",
-  "sourceRoot": "libs/project-api/src",
+  "root": "libs/project-api2",
+  "sourceRoot": "libs/project-api2/src",
   "projectType": "library",
-  "tags": [],
   "targets": {
     "lint": {
       "executor": "@nrwl/linter:eslint",
       "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": ["libs/project-api/**/*.{ts,tsx,js,jsx}"]
+        "lintFilePatterns": ["libs/project-api2/**/*.ts"]
       }
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/libs/project-api"],
+      "outputs": ["coverage/libs/project-api2"],
       "options": {
-        "jestConfig": "libs/project-api/jest.config.js",
+        "jestConfig": "libs/project-api2/jest.config.js",
         "passWithNoTests": true
       }
     }
-  }
+  },
+  "tags": []
 }

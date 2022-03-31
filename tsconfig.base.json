@@ -15,7 +15,9 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@mlechniy-put-nx-frontend/project-api": ["libs/project-api/src/index.ts"]
+      "@mlechniy-put-nx-frontend/project-api": [
+        "libs/project-api/src/index.ts"
+      ]
     }
   },
   "exclude": ["node_modules", "tmp"]
